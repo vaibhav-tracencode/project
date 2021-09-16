@@ -1,0 +1,399 @@
+{%extends "base.html"%}
+{% block body%}        
+
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                    <ul class="list-unstyled topbar-nav float-right mb-0">  
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>                      
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+                            
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Notifications <span class="badge badge-primary badge-pill">2</span>
+                                </h6> 
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">10 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/../static/assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">40 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">                                                    
+                                                <i data-feather="users" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">1 hr ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/../static/assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 hrs ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ml-1 nav-user-name hidden-sm">Nick</span>
+                                <img src="../static/../static/assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Settings</a>
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+        
+                    <ul class="list-unstyled topbar-nav mb-0">                        
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li> 
+                        <li class="creat-btn">
+                            <div class="nav-link">
+                                <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus mr-2"></i>New Task</a>
+                            </div>                                
+                        </li>                           
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Popover & Tooltips</h4>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">UI Kit</a></li>
+                                            <li class="breadcrumb-item active">Popover & Tooltips</li>
+                                        </ol>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+                                            <span class="day-name" id="Day_Name">Today:</span>&nbsp;
+                                            <span class="" id="Select_date">Jan 11</span>
+                                            <i data-feather="calendar" class="align-self-center icon-xs ml-1"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">
+                                            <i data-feather="download" class="align-self-center icon-xs"></i>
+                                        </a>
+                                    </div><!--end col-->  
+                                </div><!--end row-->                                                              
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Popovers Example</h4>
+                                    <p class="text-muted mb-0">Add small overlay content, like those found in iOS, to any element for housing secondary information.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <button type="button" class="btn btn-primary waves-effect mo-mb-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover on top
+                                    </button>
+    
+                                    <button type="button" class="btn btn-primary waves-effect mo-mb-2" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover on right
+                                    </button>
+    
+                                    <button type="button" class="btn btn-primary waves-effect mo-mb-2"
+                                        data-container="body" data-toggle="popover" title="Popover Title" data-placement="bottom"
+                                        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover on bottom
+                                    </button>
+    
+                                    <button type="button" class="btn btn-primary waves-effect mo-mb-2" data-container="body" data-toggle="popover" data-placement="left" title="Popover Title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        Popover on left
+                                    </button>
+    
+                                    <button type="button" tabindex="0" class="btn btn-secondary waves-effect" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">
+                                        Dismissible popover
+                                    </button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->    
+    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Bootstrap Tooltips</h4>
+                                    <p class="text-muted mb-0">Hover over the links below to see tooltips:</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">                
+                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        Tooltip on top
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                        Tooltip on right
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                        Tooltip on bottom
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                        Tooltip on left
+                                    </button>                                          
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Placement</h4>
+                                    <p class="text-muted mb-0">The default tippy tooltip looks like this when given no options. It has a nifty backdrop filling animation!</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-placement="top">Top</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-placement="bottom">Bottom</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-placement="left">Left</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-placement="right">Right</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-placement="top-start">Top-Start</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-placement="top-end">Top-End</button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Arrows</h4>
+                                    <p class="text-muted mb-0">Arrows point toward the reference element. 
+                                        There are two different types of arrows: sharp and round. 
+                                        You can transform the proportion and scale of the arrows any way you like.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-arrow="true" data-tippy-animation="fade">Default</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-arrow="true" data-tippy-arrowType="round" data-tippy-animation="fade">Round</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-arrow="true" data-tippy-arrowTransform="scaleX(1.5)" data-tippy-animation="fade">Wide</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-arrow="true" data-tippy-arrowTransform="scaleX(0.75)" data-tippy-animation="fade">Skinny</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-arrow="true" data-tippy-arrowTransform="scale(0.75)" data-tippy-animation="fade">Small</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-arrow="true" data-tippy-arrowTransform="scale(1.35)" data-tippy-animation="fade">Large</button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Interactivity</h4>
+                                    <p class="text-muted mb-0">Tooltips can be interactive, meaning they won't hide when you hover over or click on them.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-interactive="true">Interactive (hover)</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-interactive="true" data-tippy-trigger="click">Interactive (click)</button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Animations</h4>
+                                    <p class="text-muted mb-0">Tooltips can have different types of animations.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="shift-away" data-tippy-arrow="true">Shift away</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="shift-toward" data-tippy-arrow="true">Shift toward</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="fade" data-tippy-arrow="true">Fade</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="scale" data-tippy-arrow="true">Scale</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="perspective" data-tippy-arrow="true">Perspective</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="shift-away" data-tippy-inertia="true" data-tippy-duration="[600, 300]" data-tippy-arrow="true">Inertia (shift-away)</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="shift-toward" data-tippy-inertia="true" data-tippy-duration="[600, 300]" data-tippy-arrow="true">Inertia (shift-toward)</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="scale" data-tippy-inertia="true" data-tippy-duration="[600, 300]" data-tippy-arrow="true">Inertia (scale)</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-animation="perspective" data-tippy-inertia="true" data-tippy-duration="[600, 300]" data-tippy-arrow="true">Inertia (perspective)</button> 
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Duration</h4>
+                                    <p class="text-muted mb-0">A tippy can have different transition durations.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">                      
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-duration="0">0ms</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-duration="200">200ms</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-duration="1000">1000ms</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-duration="[500, 200]">[500ms, 200ms]</button>
+                               </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">HTML</h4>
+                                    <p class="text-muted mb-0">Tooltips can contain HTML, allowing you to craft awesome interactive popovers.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" id="myElement" data-tippy-interactive="true" data-tippy-theme="light rounded" data-tippy-arrow="true" data-tippy-size="large" data-tippy-arrowTransform="scale(2)" data-tippy-animation="fade" data-tippy-distance="15" data-tippy-interactiveBorder="20" data-local>HTML Templates</button>
+                                    <div id="feature__html" data-template>
+                                        <div style="padding:20px"><img width="50" src="../static/../static/assets/images/logo-sm.png" alt="" />
+                                            <h5>Look! The Dastone logo is inside a <strong>Dastone</strong>.</h5>
+                                            <button class="btn btn-sm btn-primary tippy-btn" data-close>Close</button>
+                                        </div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Themes</h4>
+                                    <p class="text-muted mb-0">A tippy can have any kind of theme you want! Creating a custom theme is a breeze.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" title="See-through!" data-tippy-theme="translucent">Translucent</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="Nice n&#39; light" data-tippy-theme="light" data-tippy-arrow="true">Light</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="Awesome colors!" data-tippy-theme="gradient">Gradient</button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Misc</h4>
+                                    <p class="text-muted mb-0">Tippy has a ton of features, and it's constantly improving.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <button class="btn btn-outline-primary tippy-btn" title="How cool&#39;s this?!" data-tippy-followCursor="true" data-tippy-arrow="true" data-tippy-animation="fade">Follow cursor</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="You&#39;ll need a touch device for this one." data-tippy-touchHold="true">Touch &amp; Hold</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m hugging the tooltip!" data-tippy-distance="0" data-tippy-animation="fade">Distance</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="10px x-axis, 50px y-axis offset" data-tippy-offset="10, 50">Offset</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-size="small">Small</button>
+                                    <button class="btn btn-outline-primary tippy-btn" title="I&#39;m a Tippy tooltip!" data-tippy-size="large">Large</button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                </div><!-- container -->
+
+{%endblock body%}
+
+        <script>
+            tippy('.tippy-btn');       
+            tippy('#myElement', {
+                html: document.querySelector('#feature__html'), // DIRECT ELEMENT option
+                arrow: true,
+                animation: 'fade'
+            });
+        </script>
+
+
+        

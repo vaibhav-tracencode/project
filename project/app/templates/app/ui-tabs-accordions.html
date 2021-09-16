@@ -1,0 +1,438 @@
+{%extends "base.html"%}
+{% block body%}        
+
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                    <ul class="list-unstyled topbar-nav float-right mb-0">  
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>                      
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+                            
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Notifications <span class="badge badge-primary badge-pill">2</span>
+                                </h6> 
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">10 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">40 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">                                                    
+                                                <i data-feather="users" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">1 hr ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 hrs ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ml-1 nav-user-name hidden-sm">Nick</span>
+                                <img src="../static/assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Settings</a>
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+        
+                    <ul class="list-unstyled topbar-nav mb-0">                        
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li> 
+                        <li class="creat-btn">
+                            <div class="nav-link">
+                                <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus mr-2"></i>New Task</a>
+                            </div>                                
+                        </li>                           
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Tab & Accordions</h4>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">UI Kit</a></li>
+                                            <li class="breadcrumb-item active">Tab & Accordions</li>
+                                        </ol>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+                                            <span class="day-name" id="Day_Name">Today:</span>&nbsp;
+                                            <span class="" id="Select_date">Jan 11</span>
+                                            <i data-feather="calendar" class="align-self-center icon-xs ml-1"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">
+                                            <i data-feather="download" class="align-self-center icon-xs"></i>
+                                        </a>
+                                    </div><!--end col-->  
+                                </div><!--end row-->                                                              
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Tabs</h4>
+                                    <p class="text-muted mb-0">Takes the basic nav from above and adds the <code class="highlighter-rouge">.nav-tabs</code> class to generate a tabbed interface.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-selected="true">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-selected="false">Profile</a>
+                                        </li>                                                
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-selected="false">Settings</a>
+                                        </li>
+                                    </ul>
+    
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane p-3 active" id="home" role="tabpanel">
+                                            <p class="mb-0 text-muted">
+                                                Raw denim you probably haven't heard of them jean shorts Austin.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="profile" role="tabpanel">
+                                            <p class="mb-0 text-muted">
+                                                Food truck fixie locavore, accusamus mcsweeney's
+                                                single-origin coffee squid. 
+                                            </p>
+                                        </div>                                                
+                                        <div class="tab-pane p-3" id="settings" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                            </p>
+                                        </div>
+                                    </div>        
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+    
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Pills</h4>
+                                    <p class="text-muted mb-0">The tabs plugin also works with pills.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                        <li class="nav-item waves-effect waves-light">
+                                            <a class="nav-link active" data-toggle="tab" href="#home-1" role="tab" aria-selected="true">Home</a>
+                                        </li>
+                                        <li class="nav-item waves-effect waves-light">
+                                            <a class="nav-link" data-toggle="tab" href="#profile-1" role="tab" aria-selected="false">Profile</a>
+                                        </li>
+                                        <li class="nav-item waves-effect waves-light">
+                                            <a class="nav-link" data-toggle="tab" href="#settings-1" role="tab" aria-selected="false">Settings</a>
+                                        </li>
+                                    </ul>
+    
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane p-3 active" id="home-1" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Raw denim you probably haven't heard of them jean shorts Austin.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="profile-1" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Food truck fixie locavore, accusamus mcsweeney's
+                                                single-origin coffee squid. 
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="settings-1" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                            </p>
+                                        </div>
+                                    </div>    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Vertical Pills</h4>
+                                    <p class="text-muted mb-0">And with vertical pills.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <a class="nav-link waves-effect waves-light active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                                                <a class="nav-link waves-effect waves-light" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-link waves-effect waves-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="tab-content mo-mt-2" id="v-pills-tabContent">
+                                                <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                    <p class="text-muted mb-0">
+                                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                        art party before they sold out master cleanse gluten-free squid
+                                                        scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                        art party locavore wolf cliche high life echo park Austin. Cred
+                                                        vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                        farm-to-table VHS viral locavore cosby sweater.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                    <p class="text-muted mb-0">
+                                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin
+                                                        coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next
+                                                        level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                                                        booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                                                            ad vinyl cillum PBR. Homo nostrud organic.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                    <p class="text-muted mb-0">
+                                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin
+                                                        coffee squid. Exercitation commodo enim craft beer mlkshk +1 labore velit, blog sartorial PBR leggings next
+                                                        level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                                                        booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                                                            ad vinyl cillum PBR. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Collapse</h4>
+                                    <p class="text-muted mb-0">Click the buttons below to show and hide another element via class changes:</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <p>
+                                        <a class="btn btn-secondary mb-2 mb-lg-0" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                                            Link with href
+                                        </a>
+                                        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                                            Button with data-target
+                                        </button>
+                                    </p>
+                                    <div class="collapse show" id="collapseExample">
+                                        <div class="card mb-0 card-body">
+                                            <p class="mb-0 text-muted">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p> 
+                                        </div>
+                                    </div>    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+    
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Custom Tabs</h4>
+                                    <p class="text-muted mb-0">You can use custom tabs</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+    
+                                    <!-- Nav tabs -->
+                                    <div class="nav-tabs-custom text-center">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-center active" data-toggle="tab" href="#cu_home" role="tab"><i class="la la-home d-block"></i>Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-center" data-toggle="tab" href="#cu_profile" role="tab"><i class="la la-calendar d-block"></i>Events</a>
+                                            </li>                                                
+                                            <li class="nav-item">
+                                                <a class="nav-link text-center" data-toggle="tab" href="#cu_settings" role="tab"><i class="la la-cog d-block"></i>Setings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+    
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active p-3" id="cu_home" role="tabpanel">
+                                            <p class="mb-0 text-muted">
+                                                Raw denim you probably haven't heard of them jean shorts Austin.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane p-3" id="cu_profile" role="tabpanel">
+                                            <p class="mb-0 text-muted">
+                                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla.
+                                            </p>
+                                        </div>                                                
+                                        <div class="tab-pane p-3" id="cu_settings" role="tabpanel">
+                                            <p class="text-muted mb-0">
+                                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy.
+                                            </p>
+                                        </div>
+                                    </div> <!--end tab-content-->   
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Accordion Example</h4>
+                                    <p class="text-muted mb-0">Using the card component, you can extend the default collapse behavior to create an accordion.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card border mb-1 shadow-none">
+                                            <div class="card-header custom-accordion  rounded-0" id="headingOne">
+                                                <a href="" class="text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Collapsible Group Item #1
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                <p class="mb-0 text-muted">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                                </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-1 border shadow-none">
+                                            <div class="card-header  rounded-0" id="headingTwo">
+                                                <a href="" class="collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Collapsible Group Item #2
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p class="mb-0 text-muted">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-0 border shadow-none">
+                                            <div class="card-header  rounded-0" id="headingThree">
+                                                <a href="" class="collapsed text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Collapsible Group Item #3
+                                                </a>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p class="mb-0 text-muted">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                </div><!-- container -->
+{%endblock body%}

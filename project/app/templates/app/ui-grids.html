@@ -1,0 +1,427 @@
+{%extends "base.html"%}
+{% block body%}        
+
+        
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                    <ul class="list-unstyled topbar-nav float-right mb-0">  
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>                      
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+                            
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Notifications <span class="badge badge-primary badge-pill">2</span>
+                                </h6> 
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">10 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">40 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">                                                    
+                                                <i data-feather="users" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">1 hr ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 hrs ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ml-1 nav-user-name hidden-sm">Nick</span>
+                                <img src="../static/assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Settings</a>
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+        
+                    <ul class="list-unstyled topbar-nav mb-0">                        
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li> 
+                        <li class="creat-btn">
+                            <div class="nav-link">
+                                <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus mr-2"></i>New Task</a>
+                            </div>                                
+                        </li>                           
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Grids</h4>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">UI Kit</a></li>
+                                            <li class="breadcrumb-item active">Grids</li>
+                                        </ol>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+                                            <span class="day-name" id="Day_Name">Today:</span>&nbsp;
+                                            <span class="" id="Select_date">Jan 11</span>
+                                            <i data-feather="calendar" class="align-self-center icon-xs ml-1"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">
+                                            <i data-feather="download" class="align-self-center icon-xs"></i>
+                                        </a>
+                                    </div><!--end col-->  
+                                </div><!--end row-->                                                              
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Grid options</h4>
+                                    <p class="text-muted mb-0">See how aspects of the Bootstrap grid
+                                        system work across multiple devices with a handy table.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-centered">
+                                            <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th class="text-center">
+                                                    Extra small<br>
+                                                    <small>&lt;576px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Small<br>
+                                                    <small>≥576px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Medium<br>
+                                                    <small>≥768px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Large<br>
+                                                    <small>≥992px</small>
+                                                </th>
+                                                <th class="text-center">
+                                                    Extra large<br>
+                                                    <small>≥1200px</small>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Grid behavior</th>
+                                                <td>Horizontal at all times</td>
+                                                <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Max container width</th>
+                                                <td>None (auto)</td>
+                                                <td>540px</td>
+                                                <td>720px</td>
+                                                <td>960px</td>
+                                                <td>1140px</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Class prefix</th>
+                                                <td><code>.col-</code></td>
+                                                <td><code>.col-sm-</code></td>
+                                                <td><code>.col-md-</code></td>
+                                                <td><code>.col-lg-</code></td>
+                                                <td><code>.col-xl-</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row"># of columns</th>
+                                                <td colspan="5">12</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Gutter width</th>
+                                                <td colspan="5">20px (10px on each side of a column)</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Nestable</th>
+                                                <td colspan="5">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Offsets</th>
+                                                <td colspan="5">Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-nowrap" scope="row">Column ordering</th>
+                                                <td colspan="5">Yes</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">                            
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Sm Grid-Example</h4>
+                                    <p class="text-muted mb-0">Columns collapse at 576px</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row text-center">
+                                        <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-sm-3</span></div>
+                                        <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-sm-3</span></div>
+                                        <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-sm-3</span></div>
+                                        <div class="col-sm-3"><span class="border py-2 bg-light d-block">.col-sm-3</span></div>                                                                                        
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Md Grid-Example</h4>
+                                    <p class="text-muted mb-0">Columns collapse at 768px</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row text-center">
+                                        <div class="col-md-3"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-md-3</span></div>
+                                        <div class="col-md-6"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-md-6</span></div>
+                                        <div class="col-md-3"><span class="border py-2 bg-light d-block">.col-md-3</span></div>                                                                           
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Lg Grid-Example</h4>
+                                    <p class="text-muted mb-0">Columns collapse at 992px</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row text-center">
+                                        <div class="col-lg-6"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-lg-6</span></div>
+                                        <div class="col-lg-6"><span class="border py-2 bg-light d-block">.col-lg-6</span></div>                                                                         
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Xl Grid-Example</h4>
+                                    <p class="text-muted mb-0">Columns collapse at 1200px</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row  text-center">
+                                        <div class="col-lg-4"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-xl-4</span></div>
+                                        <div class="col-lg-4"><span class="border py-2 bg-light d-block mb-2 mb-lg-0">.col-xl-4</span></div>
+                                        <div class="col-lg-4"><span class="border py-2 bg-light d-block">.col-xl-4</span></div>                                                                       
+                                    </div> 
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Grid-Example</h4>
+                                    <p class="text-muted mb-0">Using a single set of <code>.col-sm-*</code> classes, you can create a basic grid system that starts out stacked on extra small devices before becoming horizontal on desktop (medium) devices.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>
+                                            <div class="col-sm-1"><span class="border py-2 bg-light d-block mb-2">.col-sm-1</span></div>                                                                                    
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-2</span></div>
+                                            <div class="col-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-2</span></div>
+                                            <div class="col-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-2</span></div>
+                                            <div class="col-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-2</span></div>
+                                            <div class="col-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-2</span></div>
+                                            <div class="col-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-2</span></div>                                                                            
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2">.col-sm-3</span></div>
+                                            <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2">.col-sm-3</span></div>
+                                            <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2">.col-sm-3</span></div>
+                                            <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2">.col-sm-3</span></div>                                                                         
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-sm-4"><span class="border py-2 bg-light d-block mb-2">.col-sm-4</span></div>
+                                            <div class="col-sm-4"><span class="border py-2 bg-light d-block mb-2">.col-sm-4</span></div>
+                                            <div class="col-sm-4"><span class="border py-2 bg-light d-block mb-2">.col-sm-4</span></div>                                                                        
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-sm-6"><span class="border py-2 bg-light d-block mb-2">.col-sm-6</span></div>
+                                            <div class="col-sm-6"><span class="border py-2 bg-light d-block mb-2">.col-sm-6</span></div>                                                                        
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-sm-12"><span class="border py-2 bg-light d-block">.col-sm-12</span></div>                                                                       
+                                        </div>                                        
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->        
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Offset (Max-Auto)</h4>
+                                    <p class="text-muted mb-0">Move columns to the right using <code>.offset-md-*</code> classes. 
+                                        These classes increase the left margin of a column by * columns. 
+                                        For example, <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns. 
+                                        With the move to flexbox in v4, you can use margin utilities like <code>.mr-auto</code> 
+                                        to force sibling columns away from one another.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-sm-8 offset-sm-2"><span class="border py-2 bg-light d-block mb-2">.col-sm-8 offset-sm-2</span></div>                                                                        
+                                        </div>
+                                        <div class="row">                                        
+                                            <div class="col-sm-3 ml-auto"><span class="border py-2 bg-light d-block mb-2">.col-sm-3 ml-auto</span></div>
+                                            <div class="col-sm-3 ml-auto"><span class="border py-2 bg-light d-block mb-2">.col-sm-3 ml-auto</span></div>                                                                           
+                                        </div>
+                                        <div class="row">                                        
+                                            <div class="col-sm-3"><span class="border py-2 bg-light d-block mb-2">.col-sm-3</span></div>
+                                            <div class="col-sm-3 offset-sm-3"><span class="border py-2 bg-light d-block mb-2">.col-sm-3 offset-sm-3</span></div>                                                                           
+                                        </div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->                                 
+                    </div> <!-- end row -->
+
+                </div><!-- container -->
+{%endblock body%}

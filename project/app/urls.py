@@ -1,0 +1,72 @@
+from django.contrib import admin
+from django.urls import path,include
+from . import views
+urlpatterns = [
+
+    path("",views.index,name="index"),
+    path("apps-chat.html",views.app_chat),
+    path("advanced-animation.html",views.advance_animation),
+    path("apps-contact-list.html",views.app_contact,name="app-contact"),
+    path("apps-calendar.html",views.app_calendar,name="app-calendar"),
+    path("apps-files.html",views.app_files,name="app-files"),
+    path("apps-invoice.html",views.app_invoice,name="app-invoice"),
+    path("apps-tasks.html",views.app_task,name="app-task"),
+    path("apps-project-overview.html",views.app_overview,name="app-overview"),
+    path("apps-project-projects.html",views.app_project,name="app-project"),
+    path("apps-project-board.html",views.app_board,name="app-board"),
+    path("apps-project-teams.html",views.app_teams,name="app-teams"),
+    path("apps-project-files.html",views.app_project_files,name="app-project-files"),
+    path("apps-new-project.html",views.app_new_project,name="app-new-project"),
+    path("apps-ecommerce-products.html",views.e_product,name="e-product"),
+    path("apps-ecommerce-product-list.html",views.e_product_list),
+    path("apps-ecommerce-product-detail.html",views.e_product_detail,name="eproduct-detail"),
+    path("apps-ecommerce-cart.html",views.e_cart,name="e_cart"),
+    path("apps-ecommerce-checkout.html",views.e_checkout,name="e-checkout"),
+    path("auth-login.html",views.a_login,name="a-login"),
+    path("auth-register.html",views.a_register,name="a-register"),
+    path("auth-recover-pw.html",views.a_recover,name="a-recover"),
+    path("auth-lock-screen.html",views.a_lockscreen,name="a-lockscreen"),
+    path("auth-404.html",views.error404,name="404"),
+    path("auth-500.html",views.error500,name="500"),
+    path("ui-alerts.html",views.ui_alert,name="ui-alert"),
+    path("ui-avatar.html",views.ui_avtar,name="ui-avtar"),
+    path("ui-buttons.html",views.ui_buttons,name="ui-buttons"),
+    path("ui-badges.html",views.ui_badges,name="ui-badges"),
+    path("ui-cards.html",views.ui_cards),
+    path("ui-carousels.html",views.ui_carousels),
+    path("ui-check-radio.html",views.ui_checkradio),
+    path("ui-dropdowns.html",views.ui_dropdown),
+    path("ui-grid.html",views.ui_grid),
+    path("ui-images.html",views.ui_images),
+    path("ui-list.html",views.ui_list),
+    path("ui-modals.html",views.ui_modals),
+    path("ui-navbar.html",views.ui_navbar),
+    path("ui-navs.html",views.ui_navs),
+    path("ui-paginations.html",views.ui_paginations),
+    path("ui-progress.html",views.ui_progress),
+    path("ui-popover-tooltips.html",views.ui_tool),
+    path("ui-spinners.html",views.ui_spinners),
+    path("ui-tabs-accordions.html",views.ui_accordions),
+    path("ui-toasts.html",views.ui_toasts),
+    path("ui-typography.html",views.ui_typography),
+    path("ui-videos.html",views.ui_videos),
+    path("widgets.html",views.ui_widgets),
+    path("advanced-clipboard.html",views.advance_clipboard),
+    path("advanced-highlight.html",views.advance_highlight),
+    path("advanced-idle-timer.html",views.advance_timer),
+    path("advanced-kanban.html",views.advance_kanban),
+    path("advanced-lightbox.html",views.advance_lightbox),
+    path("advanced-nestable.html",views.advance_nestable),
+    path("advanced-rangeslider.html",views.advance_rangeslider),
+    path("advanced-ratings.html",views.advance_rating),
+    path("advanced-ribbons.html",views.advance_ribbons),
+    path("advanced-sessions.html",views.advance_session),
+    path("advanced-sweetalerts.html",views.advance_sweetalerts),
+
+
+
+
+
+    
+    
+]

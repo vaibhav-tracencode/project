@@ -1,0 +1,407 @@
+
+{%extends "base.html"%}
+{% block body%}        
+
+        
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                    <ul class="list-unstyled topbar-nav float-right mb-0">  
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>                      
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+                            
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Notifications <span class="badge badge-primary badge-pill">2</span>
+                                </h6> 
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">10 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">40 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">                                                    
+                                                <i data-feather="users" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">1 hr ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 hrs ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ml-1 nav-user-name hidden-sm">Nick</span>
+                                <img src="../static/assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Settings</a>
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+        
+                    <ul class="list-unstyled topbar-nav mb-0">                        
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li> 
+                        <li class="creat-btn">
+                            <div class="nav-link">
+                                <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus mr-2"></i>New Task</a>
+                            </div>                                
+                        </li>                           
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Spinners</h4>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">UI Kit</a></li>
+                                            <li class="breadcrumb-item active">Spinners</li>
+                                        </ol>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+                                            <span class="day-name" id="Day_Name">Today:</span>&nbsp;
+                                            <span class="" id="Select_date">Jan 11</span>
+                                            <i data-feather="calendar" class="align-self-center icon-xs ml-1"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">
+                                            <i data-feather="download" class="align-self-center icon-xs"></i>
+                                        </a>
+                                    </div><!--end col-->  
+                                </div><!--end row-->                                                              
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Border spinner</h4>
+                                    <p class="text-muted mb-0">Use the border spinners for a lightweight loading indicator.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">   
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Growing spinner</h4>
+                                    <p class="text-muted mb-0">If you don’t fancy a border spinner, 
+                                        switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">       
+                                    <div class="spinner-grow text-primary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>                                              
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Colors</h4>
+                                    <p class="text-muted mb-0">You can use any 
+                                        of our text color utilities on the standard spinner.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <div class="spinner-border text-primary" role="status"></div>
+                                    <div class="spinner-border text-secondary" role="status"></div>
+                                    <div class="spinner-border text-success" role="status"></div>
+                                    <div class="spinner-border text-danger" role="status"></div>
+                                    <div class="spinner-border text-warning" role="status"></div>
+                                    <div class="spinner-border text-info" role="status"></div>
+                                    <div class="spinner-border text-purple" role="status"></div>
+                                    <div class="spinner-border text-light" role="status"></div>
+                                    <div class="spinner-border text-dark" role="status"></div>                                        
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Color Growing spinner</h4>
+                                    <p class="text-muted mb-0">Here it is in blue, along with the supported variants.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">  
+                                    <div class="spinner-grow text-primary" role="status"></div>
+                                    <div class="spinner-grow text-secondary" role="status"></div>
+                                    <div class="spinner-grow text-success" role="status"></div>
+                                    <div class="spinner-grow text-danger" role="status"></div>
+                                    <div class="spinner-grow text-warning" role="status"></div>
+                                    <div class="spinner-grow text-info" role="status"></div>
+                                    <div class="spinner-grow text-purple" role="status"></div>
+                                    <div class="spinner-grow text-light" role="status"></div>
+                                    <div class="spinner-grow text-dark" role="status"></div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->  
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Alignment</h4>
+                                    <p class="text-muted mb-0">Use flexbox utilities, float utilities, or text alignment utilities 
+                                        to place spinners exactly where you need them in any situation.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="d-flex justify-content-center">
+                                        <div class="spinner-border text-primary" role="status"></div>
+                                    </div>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Placement</h4>
+                                    <p class="text-muted mb-0">Use <a href="#">flexbox utilities</a>, 
+                                        <a href="#">float utilities</a>, or <a href="#">text alignment</a> 
+                                        utilities to place spinners exactly where you need them in any situation.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="d-flex align-items-center">
+                                        <strong>Loading...</strong>
+                                        <div class="spinner-border text-primary ml-auto" role="status" aria-hidden="true"></div>
+                                    </div>                                                                                           
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Size</h4>
+                                    <p class="text-muted mb-0">Add <code class="highlighter-rouge">.spinner-border-sm</code> and 
+                                        <code class="highlighter-rouge">.spinner-grow-sm .thumb-md</code> 
+                                        to make a smaller spinner that can quickly be used within other components.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="spinner-border thumb-md text-primary" role="status"></div>
+                                            <div class="spinner-border thumb-md text-secondary" role="status"></div>
+                                        </div><!-- end col -->
+                                        
+                                        <div class="col-lg-4">
+                                            <div class="spinner-border text-primary" role="status"></div>
+                                            <div class="spinner-border text-secondary" role="status"></div>
+                                        </div><!-- end col -->
+
+                                        <div class="col-lg-4">
+                                            <div class="spinner-border spinner-border-sm" role="status"></div>
+                                            <div class="spinner-grow spinner-grow-sm" role="status"></div>
+                                        </div><!-- end col -->                                            
+                                    </div><!--end row-->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Buttons spinners</h4>
+                                    <p class="text-muted mb-0">Use spinners within buttons to indicate an action is currently processing or taking place. 
+                                        You may also swap the text out of the spinner element and utilize button text as needed.
+                                    </p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span>
+                                            </button>
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                Loading...
+                                            </button>                                                         
+                                        </div><!-- end col -->
+                                        <div class="col-lg-6">
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> <span class="sr-only">Loading...</span>
+                                            </button>
+                                            <button class="btn btn-primary" type="button" disabled>
+                                                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                                Loading...
+                                            </button>
+                                        </div><!-- end col -->
+                                    </div> <!-- end row -->                                                                                        
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Custom spinners</h4>
+                                    <p class="text-muted mb-0">you can use custom border spinner, only add <code>.spinner-border-custom-1</code> /2 /3.</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">               
+                                    <div class="spinner-border spinner-border-custom-1 text-primary" role="status"></div>
+                                    <div class="spinner-border spinner-border-custom-2 text-secondary" role="status"></div>
+                                    <div class="spinner-border spinner-border-custom-3 border-success" role="status"></div>
+                                    <div class="spinner-border spinner-border-custom-4 text-warning" role="status"></div>
+                                    <div class="spinner-border spinner-border-custom-5 border-info" role="status"></div>                                                                                     
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Custom Icon Spinners</h4>
+                                    <p class="text-muted mb-0">You can use custom icon spinners</p>
+                                </div><!--end card-header-->
+                                <div class="card-body">        
+                                    <div class="row"> 
+                                        <div class="col-md-3">
+                                            <div class="text-center">
+                                                <i class="la la-spinner text-primary la-spin progress-icon-spin"></i>
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-3">
+                                            <div class="text-center">
+                                                <i class="la la-refresh text-secondary la-spin progress-icon-spin"></i>
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-3">
+                                            <div class="text-center">
+                                                <i class="la la-sun-o text-warning la-spin progress-icon-spin"></i>
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-3">
+                                            <div class="text-center">
+                                                <i class="la la-cog la-spin progress-icon-spin"></i>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div> <!-- end row -->
+
+                </div><!-- container -->
+
+{%endblock body%}

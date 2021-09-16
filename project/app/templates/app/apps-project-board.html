@@ -1,0 +1,1032 @@
+{%extends "base.html"%}
+{%block body%}
+        
+
+        <div class="page-wrapper overflow-hidden">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                    <ul class="list-unstyled topbar-nav float-right mb-0">  
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>                      
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+                            
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Notifications <span class="badge badge-primary badge-pill">2</span>
+                                </h6> 
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">10 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">40 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">                                                    
+                                                <i data-feather="users" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">1 hr ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="../static/assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-right text-muted pl-2">2 hrs ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ml-2 text-truncate">
+                                                <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ml-1 nav-user-name hidden-sm">Nick</span>
+                                <img src="../static/assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Settings</a>
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+        
+                    <ul class="list-unstyled topbar-nav mb-0">                        
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li> 
+                        <li class="creat-btn">
+                            <div class="nav-link">
+                                <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus mr-2"></i>New Task</a>
+                            </div>                                
+                        </li>                           
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Kanban Board</h4>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript:void(0);">Projects</a></li>
+                                            <li class="breadcrumb-item active">Kanban Board</li>
+                                        </ol>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+                                            <span class="day-name" id="Day_Name">Today:</span>&nbsp;
+                                            <span class="" id="Select_date">Jan 11</span>
+                                            <i data-feather="calendar" class="align-self-center icon-xs ml-1"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">
+                                            <i data-feather="download" class="align-self-center icon-xs"></i>
+                                        </a>
+                                    </div><!--end col-->  
+                                </div><!--end row-->                                                              
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="kanban-board">
+                                <div class="kanban-col">
+                                    <div class="kanban-main-card">                                                    
+                                        <div class="kanban-box-title">
+                                            <h4 class="font-14 mt-0 mb-3">To Do</h4>
+                                            <div class="dropdown kanban-main-dropdown">
+                                                <a class="dropdown-toggle arrow-none" id="drop1" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop1">
+                                                    <a class="dropdown-item" href="#">Create Project</a>
+                                                    <a class="dropdown-item" href="#">Open Project</a>
+                                                    <a class="dropdown-item" href="#">Tasks Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="project-list-left" class="pb-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop2" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop2">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-warning"></i>
+                                                    <h5 class="my-1 font-14">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-1.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-9.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop3" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop3">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-success"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-2.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop4" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop4">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-danger"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-3.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-1.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop5" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop5">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-purple"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-4.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop6" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop6">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-success"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-8.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-2.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                        </div><!--end project-list-left-->
+                                        <button type="button" class="btn btn-block btn-soft-primary btn-sm">Add Task</button>
+                                    </div><!--end /div-->
+                                </div><!--end kanban-col-->
+
+                                <div class="kanban-col">
+                                    <div class="kanban-main-card">                                                    
+                                        <div class="kanban-box-title">
+                                            <h4 class="font-14 mt-0 mb-3">In Progress</h4>
+                                            <div class="dropdown kanban-main-dropdown">
+                                                <a class="dropdown-toggle arrow-none" id="drop1" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop1">
+                                                    <a class="dropdown-item" href="#">Create Project</a>
+                                                    <a class="dropdown-item" href="#">Open Project</a>
+                                                    <a class="dropdown-item" href="#">Tasks Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="project-list-center-left" class="pb-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop08" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop08">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-warning"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-1.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-9.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop9" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop9">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-success"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-2.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop10" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop10">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-danger"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-3.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-1.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop11">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-purple"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-4.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                        </div><!--end project-list-left-->
+                                        <button type="button" class="btn btn-block  btn-soft-primary btn-sm">Add Task</button>
+                                    </div><!--end /div-->
+                                </div><!--end kanban-col-->
+                                
+                                
+                                <div class="kanban-col">
+                                    <div class="kanban-main-card">                                                    
+                                        <div class="kanban-box-title">
+                                            <h4 class="font-14 mt-0 mb-3">Code Review</h4>
+                                            <div class="dropdown kanban-main-dropdown">
+                                                <a class="dropdown-toggle arrow-none" id="drop1" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop1">
+                                                    <a class="dropdown-item" href="#">Create Project</a>
+                                                    <a class="dropdown-item" href="#">Open Project</a>
+                                                    <a class="dropdown-item" href="#">Tasks Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="project-list-center-right" class="pb-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop13" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop13">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-warning"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-5.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop14" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop14">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-purple"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-6.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-9.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop15" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop15">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-danger"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-7.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->                                                    
+                                        </div><!--end project-list-right-->
+                                        <button type="button" class="btn btn-block  btn-soft-primary btn-sm">Add Task</button>
+                                    </div><!--end /div-->
+                                </div><!--end kanban-col-->
+
+                                <div class="kanban-col">
+                                    <div class="kanban-main-card">                                                    
+                                        <div class="kanban-box-title">
+                                            <h4 class="font-14 mt-0 mb-3">Changes</h4>
+                                            <div class="dropdown kanban-main-dropdown">
+                                                <a class="dropdown-toggle arrow-none" id="drop1" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop1">
+                                                    <a class="dropdown-item" href="#">Create Project</a>
+                                                    <a class="dropdown-item" href="#">Open Project</a>
+                                                    <a class="dropdown-item" href="#">Tasks Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="project-list-center" class="pb-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop17" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop17">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-warning"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-5.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                           
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop20" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop20">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-success"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-8.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-2.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                        </div><!--end project-list-right-->
+                                        <button type="button" class="btn btn-block  btn-soft-primary btn-sm">Add Task</button>
+                                    </div><!--end /div-->
+                                </div><!--end kanban-col-->
+
+                                <div class="kanban-col">
+                                    <div class="kanban-main-card">                                                    
+                                        <div class="kanban-box-title">
+                                            <h4 class="font-14 mt-0 mb-3">Done</h4>
+                                            <div class="dropdown kanban-main-dropdown">
+                                                <a class="dropdown-toggle arrow-none" id="drop1" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                    <i class="las la-ellipsis-v font-24 text-muted"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop1">
+                                                    <a class="dropdown-item" href="#">Create Project</a>
+                                                    <a class="dropdown-item" href="#">Open Project</a>
+                                                    <a class="dropdown-item" href="#">Tasks Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="project-list-right" class="pb-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop17" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop17">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-warning"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-5.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop18" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop18">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-purple"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-6.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-9.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop19" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop19">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-danger"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-7.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="dropdown d-inline-block float-right">
+                                                        <a class="dropdown-toggle mr-n2 mt-n2" id="drop20" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="las la-ellipsis-v font-18 text-muted"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop20">
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div><!--end dropdown-->
+                                                    <i class="mdi mdi-circle-outline d-block mt-n2 font-14 text-success"></i>
+                                                    <h5 class="my-1">Mobile Account Setting</h5>
+                                                    <p class="text-muted mb-0">Mobile App</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 align-self-center">
+                                                            <ul class="list-inline mb-0">                                                                    
+                                                                <li class="list-item d-inline-block mr-2">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-format-list-bulleted text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">0/5</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-item d-inline-block">
+                                                                    <a class="" href="#">
+                                                                        <i class="mdi mdi-comment-outline text-muted"></i>
+                                                                        <span class="text-muted font-weight-bold">3</span>
+                                                                    </a>                                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--end col-->
+                                                        <div class="col-6 align-self-center">
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-8.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                            <a class="float-right" href="#">
+                                                                <img src="../static/assets/images/users/user-2.jpg" alt="user" class="thumb-xxs rounded-circle">
+                                                            </a>
+                                                        </div><!--end col-->
+                                                    </div><!--end row-->
+                                                </div><!--end card-body-->
+                                            </div><!--end card-->
+                                        </div><!--end project-list-right-->
+                                        <button type="button" class="btn btn-block  btn-soft-primary btn-sm">Add Task</button>
+                                    </div><!--end /div-->
+                                </div><!--end kanban-col-->
+                            </div><!--end kanban-board--> 
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                </div><!-- container -->
+{%endblock body%}
