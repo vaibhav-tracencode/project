@@ -22,8 +22,10 @@ urlpatterns = [
     path("apps-ecommerce-product-detail.html",views.e_product_detail,name="eproduct-detail"),
     path("apps-ecommerce-cart.html",views.e_cart,name="e_cart"),
     path("apps-ecommerce-checkout.html",views.e_checkout,name="e-checkout"),
-    path("auth-login.html",views.a_login,name="a-login"),
-    path("auth-register.html",views.a_register,name="a-register"),
+    # path("auth-login.html",views.a_login,name="a-login"),
+    path("auth-login.html",views.LoginView.as_view()),
+    path("auth-register.html",views.Register.as_view()),
+    # path("auth-register.html",views.a_register,name="a-register"),
     path("auth-recover-pw.html",views.a_recover,name="a-recover"),
     path("auth-lock-screen.html",views.a_lockscreen,name="a-lockscreen"),
     path("auth-404.html",views.error404,name="404"),
@@ -110,6 +112,7 @@ urlpatterns = [
     path("charts-morris.html",views.chart_morris),
     path("apps-email-inbox.html",views.app_email_inbox),
     path("apps-email-read.html",views.app_email_read),
+    path("logout",views.logouts,name="logout"),
 
 
 

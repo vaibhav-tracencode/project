@@ -50,7 +50,8 @@
                                      <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div class="tab-pane active p-3" id="LogIn_Tab" role="tabpanel">                                        
-                                            <form class="form-horizontal auth-form" action="index.html">
+                                            <form class="form-horizontal auth-form" action="auth-login.html" method="post">
+                                                {% csrf_token %}
                 
                                                 <div class="form-group mb-2">
                                                     <label for="username">Username</label>
@@ -80,7 +81,7 @@
                     
                                                 <div class="form-group mb-0 row">
                                                     <div class="col-12">
-                                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="button">Log In <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In <i class="fas fa-sign-in-alt ml-1"></i></button>
                                                     </div><!--end col--> 
                                                 </div> <!--end form-group-->                           
                                             </form><!--end form-->
@@ -90,15 +91,24 @@
                                             <div class="account-social">
                                                 <h6 class="mb-3">Or Login With</h6>
                                             </div>
+
                                             <div class="btn-group btn-block">
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Facebook</button>
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Twitter</button>
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Google</button>
                                             </div>
+                                            {% if messages %}
+
+                                            <ul class="messages">
+                                                {% for message in messages%}
+                                               <center><li> {{message}}</li></center>
+                                                {% endfor %}
+                                            </ul>
+                                            {% endif %}
                                         </div>
                                         <div class="tab-pane px-3 pt-3" id="Register_Tab" role="tabpanel">
-                                            <form class="form-horizontal auth-form" action="index.html">
-            
+                                            <form class="form-horizontal auth-form" action="auth-register.html" id="nameform" method="post">
+                                                {% csrf_token %}
                                                 <div class="form-group mb-2">
                                                     <label for="username">Username</label>
                                                     <div class="input-group">                                                                                         
@@ -145,7 +155,8 @@
                     
                                                 <div class="form-group mb-0 row">
                                                     <div class="col-12">
-                                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="button">Register <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="submit"  value="Submit">Register<i class="fas fa-sign-in-alt ml-1"></i></button>
+                                                        <!-- <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Register <i class="fas fa-sign-in-alt ml-1"></i></button> -->
                                                     </div><!--end col--> 
                                                 </div> <!--end form-group-->                           
                                             </form><!--end form-->

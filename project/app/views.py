@@ -1,7 +1,18 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+
 from django.http import HttpResponse
+from  django.contrib.auth.models import User
+from  django.contrib.auth import authenticate,login,logout
+from django.contrib import messages
+from django.contrib.auth import get_user_model
+from django.views.generic import View
+from django.contrib.auth.decorators import login_required
+User = get_user_model()
+
 
 # Create your views here.
+
+@login_required(redirect_field_name="auth-login.html")
 def index(request):
     return render(request,"app/index.html")
 
@@ -64,11 +75,76 @@ def e_cart(request):
 def e_product_detail(request):
     return render(request,"app/apps-ecommerce-product-detail.html")
 
-def a_login(request):
-    return render(request,"app/auth-login.html")
+def logouts(request):
+    logout(request)
+    return redirect("auth-login.html")
 
-def a_register(request):
-    return render(request,"app/auth-register.html")
+
+class LoginView(View):
+    def get(self, request):
+         return render(request,"app/auth-login.html")
+
+    def post(self, request):
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(username=username, password=password)
+
+        if user is not None:
+              login(request, user)
+              return redirect("/")
+        else:
+            messages.error(request,"invalid credential")
+            return redirect("auth-login.html")
+
+# def a_login(request):
+
+#     if request.method == "POST":
+#         username=request.POST["username"]
+#         password=request.POST["password"]
+#         user = authenticate(username=username,password=password)
+#         if user is not None:
+#             login(request,user)
+#             # messages.success(request,"successfully logged in")
+#             return redirect("/")
+#         else:
+#             messages.error(request,"invalid credential")
+#             return redirect("auth-login.html")
+
+#     return render(request,"app/auth-login.html")
+
+
+class Register(View):
+    def get(self,request):
+         return render(request,"app/auth-register.html")
+
+    def post(self,request):
+        username= request.POST["username"]
+        email= request.POST["email"]
+        password= request.POST["password"]
+        conf_password = request.POST["conf-password"]
+        mobile = request.POST["mobile number"]
+        myuser = User.objects.create_user(username,email,password)
+        myuser.mobile=mobile
+        myuser.save()
+         
+        return redirect("auth-login.html")
+
+# def a_register(request):
+#     if request.method =="POST":
+#         username= request.POST["username"]
+#         email= request.POST["email"]
+#         password= request.POST["password"]
+#         conf_password = request.POST["conf-password"]
+#         mobile = request.POST["mobile number"]
+#         myuser = User.objects.create_user(username,email,password)
+#         myuser.mobile=mobile
+#         myuser.save()
+         
+#         return redirect("auth-login.html")
+
+
+
+#     return render(request,"app/auth-register.html")
 
 def a_recover(request):
     return render(request,"app/auth-recover-pw.html")
